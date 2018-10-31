@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+            $(document).ready(function(){
+                
+
+                //Nav Function
+                
+                //Home
+                $('#home_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                    $("body").addClass("light_up");
+                }); 
+
+                //Click Nav
+                $('#click_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 100 }, "slow");
+                    $("#click_func").addClass("light_up");
+                }); 
+                    
+
+                //Hide Nav
+                $('#hide_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 300 }, "slow");
+                    $("#hide_func").addClass("light_up");
+                }); 
+                
+                //Show Nav
+                $('#show_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 500 }, "slow");
+                    $("#show_func").addClass("light_up");
+                }); 
+
+                //Toggle Nav
+                $('#toggle_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 700 }, "slow");
+                    $("#toggle_func").addClass("light_up");
+                }); 
+
+                //Slide Up Nav
+                $('#slideUp_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 940 }, "slow");
+                    $("#slideUp_func").addClass("light_up");
+                }); 
+
+                //Slide Down Nav
+                $('#slideDown_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 1140 }, "slow");
+                    $("#slideDown_func").addClass("light_up");
+                }); 
+
+                //Slide Toggle Nav
+                $('#slideToggle_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 1400 }, "slow");
+                    $("#slideToggle_func").addClass("light_up");
+                }); 
+
+                //Fade In Nav
+                $('#fadeIn_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 1600 }, "slow");
+                    $("#fadeIn_func").addClass("light_up");
+                }); 
+
+                //Fade Out Nav
+                $('#fadeOut_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 1900 }, "slow");
+                    $("#fadeOut_func").addClass("light_up");
+                }); 
+
+                //Add Class Nav
+                $('#addClass_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 2350 }, "slow");
+                    $("#addClass_func").addClass("light_up");
+                }); 
+
+
+                //Before Nav
+                $('#before_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 2550 }, "slow");
+                    $("#before_func").addClass("light_up");
+                }); 
+
+                 //After Nav
+                 $('#after_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 2800 }, "slow");
+                    $("#after_func").addClass("light_up");
+                }); 
+
+                 //append Nav
+                 $('#append_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 3000 }, "slow");
+                    $("#append_func").addClass("light_up");
+                }); 
+
+                 //HTML Nav
+                 $('#html_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 3300 }, "slow");
+                    $("#html_func").addClass("light_up");
+                }); 
+
+                 //Attr Nav
+                $('#attr_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 3600 }, "slow");
+                    $("#attr_func").addClass("light_up");
+                }); 
+
+                //Val Nav
+                $('#val_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 4400 }, "slow");
+                    $("#val_func").addClass("light_up");
+                });  
+
+                 //Hide Nav
+                 $('#text_nav').click(function(){
+                    $("html, body").animate({ scrollTop: 4800 }, "slow");
+                    $("#text_func").addClass("light_up");
+                }); 
+
+                //Nav Scroll Slowdown
+
+
+                //Click Button
+                $("#click_bttn").click(function(){
+                    $("#click").fadeToggle("Button Clicked!");
+                    $("#pclick").html("Hey, you clicked the button! Click it again to see what happens.");
+                })
+            
+                //Hide Button
+                $("#hide_bttn").click(function(){
+                    $("#hide").hide();
+                    $("#phide").html("Ah! That looks much better.")
+                });
+
+                //Show Button
+                $("#show_bttn").click(function(){
+                    $("#hide").show();
+                    $("#pshow").html("I think it looks better that way, don't you?")
+                    $("#phide").html("Thanks for putting me back!")
+                });
+                
+                //Toggle
+                $("#toggle_bttn").click(function(){
+                    $("#hide_func").fadeToggle();
+                    $("#show_func").fadeToggle();
+                    $("#ptoggle").html("Muahahaha. It must be WITCHCRAFT! You can always bring it back by clicking the button again...at least, I hope.");
+                });
+                
+                //Slide Up
+                $("#slideUp_bttn").click(function(){
+                    if ( $( "#click_func,#hide_func,#show_func,#toggle_func,#slideUp_func" ).is( ":hidden" ) ) {
+                        $( "#click_func,#hide_func,#show_func,#toggle_func,#slideUp_func" ).slideDown( "slow" );
+                    } else {
+                        $( "#click_func,#hide_func,#show_func,#toggle_func,#slideUp_func").slideUp("slow");
+                    }
+                    $("pslide").html("Slide to the left... slide to the right!")
+                });
+                
+                
+                //Slide Down
+                 $("#slideDown_bttn").click(function(){
+                    if ( $( "#click_func,#hide_func,#show_func,#toggle_func,#slideUp_func" ).is( ":hidden" ) ) {
+                        $( "#click_func,#hide_func,#show_func,#toggle_func,#slideUp_func" ).slideDown( "slow" );
+                    } else {
+                        $( "#click_func,#hide_func,#show_func,#toggle_func,#slideUp_func").slideUp("slow");
+                    }
+                });
+                
+                //Slide Toggle
+                $("#slideToggle_bttn").click(function(){
+                    $("#click_func,#hide_func,#show_func,#toggle_func,#slideUp_func,#slideDown_func").slideToggle("slow", function(){
+
+                    });
+                }); 
+
+                //FadeIn
+                $("#box-contain").hide();
+
+                $( "#fadeIn_bttn" ).click(function() {
+                    $( "#box-contain" ).fadeIn( "slow", function() {
+                // Animation complete
+                    });
+                });
+
+                //FadeOut
+                $( "#fadeOut_bttn" ).click(function() {
+                    $( "#box-contain2" ).fadeOut( "slow", function() {
+                // Animation complete
+                    });
+                });
+                
+                //Add Class
+                $("#addClass_bttn").click(function(){
+                    $("#addClass_bttn").addClass("button2");
+                    $("#addClass_func").addClass("func_contain2");
+
+                })
+
+                //before
+                $("#before_bttn").click(function(){
+                    $( "#pbefore" ).before( "<b>Perfect! Thanks for putting me before all else :P</b>" );
+                })
+
+                //after
+                $("#after_bttn").click(function(){
+                    $( "#pafter" ).after( "<b>It looks like I'm not that important after all!</b>" );
+                })
+
+                //append
+                $("#append_bttn").click(function(){
+                    $("#img_cont").append('<img src="img/ninja.jpg"/>');
+                    $("#pappend").html("Someone is hiding below. I wonder what it could be. Scroll down if you dare!")
+                })
+
+                //html
+                $("#html_bttn").click(function(){
+                    $("#phtml").html("Out with the old, in with the new!");
+                })
+
+                //attr
+                $("#attr_bttn").click(function(){
+                    $( "#galaxy_img" ).attr({width: "100%", height:"100%"});
+                })
+
+                //Value
+                $("#val_bttn").click(function(){
+                    $("input:text").val("I have value now. THANK YOU!");
+                })
+                
+                //Text
+                $("#text_bttn").click(function(){
+                    $("#ptext").text(function(){
+                    return "Like this, this is incredible content!";
+                    });
+                })
+
+            })
+            
+    </script>
+
+</head>
+<body>
+
+    <div id="main_head">
+        <h1>JQuery Functions</h1>
+    </div>
+        
+    <div class="container">
+        <!--Click Function-->
+        <div class="func_contain" id="click_func">
+           <button class="button" id="click_bttn">Click me!</button>
+
+           <div class=txt_contain>
+                <h1 id="click">.click</h1>
+                <p id="pclick">Click the button... you know you want to.</p>
+           </div>  
+        </div>
+
+        <!--Hide Function-->
+        <div class="func_contain" id="hide_func">
+           <button class="button" id="hide_bttn">Hide it!</button>
+
+           <div class=txt_contain>
+                <h1 id="hide">.hide</h1>
+                <p id="phide">This header is ugly, we should hide it.</p>
+           </div>  
+        </div>
+
+        <!--Show Function-->
+        <div class="func_contain" id="show_func">
+           <button class="button" id="show_bttn">Show it!</button>
+
+           <div class=txt_contain>
+                <h1 id="show">.show</h1>
+                <p id="pshow">Okay, maybe that header wasn't so bad. Let's bring it back!.</p>
+           </div>  
+        </div>
+
+        <!--Toggle Function-->
+        <div class="func_contain" id="toggle_func">
+           <button class="button" id="toggle_bttn">Toggle me!</button>
+
+           <div class=txt_contain>
+                <h1 id="toggle">.toggle</h1>
+                <p id="ptoggle">Well, I don't really think those .hide and .show functions are useful. Try toggling them out of here!</p>
+           </div>  
+        </div>
+
+        <!--SlideUp Function-->
+        <div class="func_contain" id="slideUp_func">
+            <button class="button" id="slideUp_bttn">Cha cha slide!</button>
+ 
+            <div class=txt_contain>
+                 <h1 id="slideUp">.slideUp</h1>
+                 <p id="pslideUp">Well, I don't really think those .hide and .show functions are useful. Try toggling them out of here!</p>
+            </div>  
+        </div>
+
+        <!--SlideDown Function-->
+        <div class="func_contain" id="slideDown_func">
+           <button class="button" id="slideDown_bttn">Reverse it!</button>
+
+           <div class=txt_contain>
+                <h1 id="slideDown">.slideDown</h1>
+                <p id="pslideDown">Well, I don't really think those .hide and .show functions are useful. Try toggling them out of here!</p>
+           </div>  
+       </div>
+
+       <!--SlideToggle Function-->
+        <div class="func_contain" id="slideToggle_func">
+            <button class="button" id="slideToggle_bttn">Up and Down!</button>
+ 
+            <div class=txt_contain>
+                 <h1 id="slideToggle">.slideToggle</h1>
+                 <p id="pslideToggle">Sliding up and down is fun, but not with so much code! Instead, we should .slideToggle</p>
+            </div>  
+        </div>
+
+        <!--fadeIn Function-->
+        <div class="func_contain" id="fadeIn_func">
+            <button class="button" id="fadeIn_bttn">Click me!</button>
+ 
+            <div class=txt_contain>
+                 <h1 id="fadeIn">.fadeIn</h1>
+                 <p id="pfadeIn">Sometimes you just want a bunch</p>
+            </div>  
+            
+        </div>
+
+        <div id="box-contain">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+        </div>
+
+        <!--fadeOut Function-->
+        <div class="func_contain" id="fadeOut_func">
+            <button class="button" id="fadeOut_bttn">Click me!</button>
+ 
+            <div class=txt_contain>
+                 <h1 id="fadeOut">.fadeOut</h1>
+                 <p id="pfadeOut">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci deserunt, nam pariatur.</p>
+            </div>  
+            
+        </div>
+
+        <div id="box-contain2">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+        </div>
+       
+        <!--Add Class Function-->
+        <div class="func_contain" id="addClass_func">
+            <button class="button" id="addClass_bttn">Click me!</button>
+ 
+            <div class=txt_contain>
+                 <h1 id="addClass">.addClass</h1>
+                 <p id="paddClass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet nobis, nemo impedit.</p>
+            </div>  
+        </div>
+
+        <!--Before Function-->
+        <div class="func_contain" id="before_func">
+            <button class="button" id="before_bttn">Click me!</button>
+ 
+            <div class=txt_contain>
+                 <h1 id="before">.before</h1>
+                 <p id="pbefore">Sometimes you want to put text (or other items) before something else on your website. Use JQuery to make it a breeze!</p>
+            </div>  
+        </div>
+
+         <!--After Function-->
+        <div class="func_contain" id="after_func">
+            <button class="button" id="after_bttn">Click me!</button>
+ 
+            <div class=txt_contain>
+                 <h1 id="after">.after</h1>
+                 <p id="pafter">Other times you want to put text (or other items) after something else. JQuery can do that too!</p>
+            </div>  
+        </div>
+
+        <!--Append Function-->
+        <div class="func_contain" id="append_func">
+                <button class="button" id="append_bttn">Click me!</button>
+     
+                <div class=txt_contain>
+                     <h1 id="append">.append</h1>
+                     <p id="pappend">You can also append things to your website, and make things appear out of nowhere like a ninja!!</p>
+                </div>  
+        </div>
+        <div id="img_cont"></div>
+
+
+        <!--HTML Function-->
+        <div class="func_contain" id="html_func">
+
+                <button class="button" id="html_bttn">Click me!</button>
+ 
+                <div class=txt_contain>
+                     <h1 id="html">.html</h1>
+                     <p id="phtml">You can use .html() to set an element's content, any content that was in that element is completely replaced by the new content.</p>
+                </div>  
+    
+         </div>
+
+         <!--attr Function-->
+        <div class="func_contain" id="attr_func">
+
+                <button class="button" id="attr_bttn">Click me!</button>
+ 
+                <div class=txt_contain>
+                     <h1 id="attr">.attr</h1>
+                     <p id="pattr">We can also change the attributes of images using .attr. This galaxy is kind of small...let's make it bigger!</p>
+                </div> 
+
+         </div>
+
+         <div class="galaxy_cont">
+            <img id="galaxy_img" src="img/galaxy.jpg" alt="" width="500px" height="313px">
+        </div>
+         
+
+        <!--Val Function-->
+        <div class="func_contain" id="val_func">
+
+            <button class="button" id="val_bttn">SET. THAT. VALUE!</button>
+
+            <div class=txt_contain>
+                 <h1 id="val">.val</h1>
+                 <p id="pval">We all need value in life. You can give input elements a value with JQuery.</p>
+                 <input type="text" id="fname" name="firstname" placeholder="Give me some value.">
+            </div>  
+
+        </div>
+
+         <!--text Function-->
+        <div class="func_contain" id="text_func">
+
+            <button class="button" id="text_bttn">Click me!</button>
+
+            <div class=txt_contain>
+                 <h1 id="text">.text</h1>
+                 <p id="ptext">And if you don't like the things written on your website. You can replace it with something else!</p>
+            </div> 
+
+        </div>
+
+    
+
+
+        <!--ADD NEW FUNCTIONS ABOVE HERE!!-->
+         <!--Nav Bar-->
+        <div class="nav_contain">
+            <ul class="nav_ul">
+                    <li id="click_nav">.click</li> 
+                    <li id="hide_nav">.hide</li>
+                    <li id="show_nav">.show</li>
+                    <li id="toggle_nav">.toggle</li>  
+                    <li id="slideUp_nav">.slideUp</li>
+                    <li id="slideDown_nav">.slideDown</li>
+                    <li id="slideToggle_nav">.slideToggle</li>
+                    <li id="fadeIn_nav">.fadeIn</li>
+                    <li id="fadeOut_nav">.fadeOut</li>   
+                    <li id="addClass_nav">.addClass</li>
+                    <li id="before_nav">.before</li>
+                    <li id="after_nav">.after</li>
+                    <li id="append_nav">.append</li>
+                    <li id="html_nav">.html</li>
+                    <li id="attr_nav">.attr</li>
+                    <li id="val_nav">.val</li>
+                    <li id="text_nav">.text</li>  
+                    <li id="home_nav">Home</li>    
+            </ul>
+        </div>
+    </div>
+
+    
+
+
+</body>
+
+</html>

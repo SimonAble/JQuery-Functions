@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding:0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+html{
+    width:100%;
+    height:100%;
+}    
+body{
+    width:90%;
+    height:100%;
+    background-image: linear-gradient(rgb(140, 189, 143),rgb(87, 117, 87),rgb(24, 24, 24));
+    background-repeat: no-repeat;
+    padding:40px;
+    height: 100%;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+
+.nav_contain{
+    background-color: #333;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid rgb(44, 44, 44);
+}
+.nav_ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
+    margin:auto auto;
+    padding:2%;
+
+}
+
+.nav_ul li{
+    width:100%;
+    height:45px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 2px;
+    color:rgb(211, 211, 211);
+    list-style-type: none;
+    text-align: center;
+    margin: auto auto;
+    padding-top: 12px;
+}
+
+.nav_ul li:hover{
+    background-color: rgb(97, 37, 37);
+}
+
+.nav_ul a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.container{
+    width:100%;
+    height:100%;
+    margin-bottom: 300px;
+}
+
+#main_head{
+    text-align: center;
+    width:100%;
+    height:100px;
+    background-color: rgb(97, 37, 37);
+    color:white;
+    border-radius: 2px;
+    padding:2% 2% 0px;
+    margin:1% auto 4% auto;
+    font-size: 30px;
+}
+
+.func_contain{
+    display:flex;
+    justify-content: space-between;
+    padding:5% 10%;
+    border-bottom: 3px solid slategrey;
+}
+
+.light_up{
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+}
+
+@keyframes example {
+    to {box-shadow: none;}
+    from {box-shadow: 0px 0px 60px rgb(255, 235, 124);;}
+    to {box-shadow: none;}
+}
+
+.button{
+    height:50px;
+    width:30%;
+    text-align: center;
+    color:white;
+    background-color: rgb(103, 87, 136);
+    border-radius:3px;
+    border:none;
+    font-size: 18px;
+    margin:auto;
+}
+
+.button:hover{
+    background-color: rgb(48, 37, 59);
+}
+
+.txt_contain{
+    text-align: center;
+    padding:2px;
+    width:50%;
+    color:white;
+}
+
+.txt_contain h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.txt_contain p{
+    font-size: 18px;
+}
+
+#one{
+    background-color: rgb(155, 155, 189);
+    height:220px;
+    width:220px;
+    display:inline-block;
+    margin:20px;
+    border-radius: 2px;
+}
+
+#two{
+    background-color: rgb(100, 100, 141);
+    height:220px;
+    width:220px;
+    display:inline-block;
+    margin:20px;
+    border-radius: 2px;
+}
+
+#three{
+    background-color: rgb(52, 52, 97);
+    height:220px;
+    width:220px;
+    display:inline-block;
+    margin:20px;
+    border-radius: 2px;
+}
+
+#fadeIn_func{
+    border:none;
+}
+
+#box-contain{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+    
+    margin:10px auto;
+}
+
+#fadeOut_func{
+    border-top: 3px solid slategrey;
+    border-bottom: none;
+}
+#box-contain2{
+    display:flex;
+    width:100%;
+    justify-content: space-evenly;
+ 
+    margin:10px auto;
+}
+#addClass_func{
+    border-top: 3px solid slategrey;
+}
+
+.func_contain2{
+    display:flex;
+    justify-content: space-between;
+    padding:5% 10%;
+    border-bottom: 3px solid slategrey;
+    background-color: rgb(29, 29, 29);
+    color:white;
+}
+
+.button2{
+    height:50px;
+    width:30%;
+    text-align: center;
+    color:white;
+    background-color: rgb(119, 44, 44);
+    border-radius:3px;
+    border:none;
+    font-size: 18px;
+    margin:auto;
+}
+
+.button2:hover{
+    background-color: rgb(165, 64, 64);
+}
+
+#img_cont{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+#append_func{
+    border:none;
+    padding-bottom: 100px;
+}
+
+#html_func{
+    border-top: 3px solid slategrey;
+}
+
+#attr_func{
+    margin-bottom: 0px;
+    border-bottom: none;
+    display:flex;
+}
+
+.galaxy_cont{
+    display: flex;
+    justify-content: center;
+}
+
+#galaxy_img{
+    margin:75px;
+}
+
+
+#val_func{
+    margin-top: 75px;
+    margin-bottom: 10px;
+    border-top: 3px solid slategrey;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 32px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#text_func{
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
