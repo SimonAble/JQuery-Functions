@@ -4,11 +4,12 @@ This repository contains a bunch of implementations for common JQuery functions.
 
 You can play around with a bunch of these functions by clicking <a href = "https://simonable.github.io/JQuery-Functions/">Here</a>
 
+
 ![](https://github.com/SimonAble/JQuery-Functions/blob/master/img/Screen%20Shot%202018-10-30%20at%208.42.02%20PM.png)
 
 ### Functions covered in this repository:
 
-- .click
+#### .click
 ```javascript
 //Click Button
 $("#click_bttn").click(function(){
@@ -17,7 +18,7 @@ $("#click_bttn").click(function(){
 })
 ```
 
-- .hide
+#### .hide
 ```javascript
 //Hide Button
 $("#hide_bttn").click(function(){
@@ -26,7 +27,7 @@ $("#hide_bttn").click(function(){
 });
 ```
 
-- .show
+#### .show
 ```javascript
 //Show Button
 $("#show_bttn").click(function(){
@@ -36,7 +37,7 @@ $("#show_bttn").click(function(){
 });
 ```
 
-- .fadeToggle
+#### .fadeToggle
 ```javascript
 //Toggle
 $("#toggle_bttn").click(function(){
@@ -46,7 +47,7 @@ $("#toggle_bttn").click(function(){
 });
 ```
 
-- .slideUp
+#### .slideUp
 ```javascript
 //Slide Up
 $("#slideUp_bttn").click(function(){
@@ -58,7 +59,7 @@ $("#slideUp_bttn").click(function(){
   $("pslide").html("Slide to the left... slide to the right!")
 });
 ```
-- .slideDown
+#### .slideDown
 ```javascript
 //Slide Down
 $("#slideDown_bttn").click(function(){
@@ -70,7 +71,7 @@ $("#slideDown_bttn").click(function(){
 });
 ```
 
-- .slideToggle
+#### .slideToggle
 ```javascript
 //Slide Toggle
 $("#slideToggle_bttn").click(function(){
@@ -80,7 +81,7 @@ $("#slideToggle_bttn").click(function(){
 }); 
 ```
 
-- .fadeIn
+#### .fadeIn
 ```javascript
 //FadeIn
 $("#box-contain").hide();
@@ -92,7 +93,7 @@ $( "#fadeIn_bttn" ).click(function() {
 });
 ```
 
-- .fadeOut
+#### .fadeOut
 ```javascript
 //FadeOut
 $( "#fadeOut_bttn" ).click(function() {
@@ -102,7 +103,7 @@ $( "#fadeOut_bttn" ).click(function() {
 });
 ```
 
-- .addClass
+#### .addClass
 ```javascript
 //Add Class
 $("#addClass_bttn").click(function(){
@@ -112,7 +113,7 @@ $("#addClass_bttn").click(function(){
 })
 ```
 
-- .before
+#### .before
 ```javascript
 //before
 $("#before_bttn").click(function(){
@@ -120,7 +121,7 @@ $("#before_bttn").click(function(){
 })
 ```
 
-- .after
+#### .after
 ```javascript
 //after
 $("#after_bttn").click(function(){
@@ -128,7 +129,7 @@ $("#after_bttn").click(function(){
 })
 ```
 
-- .append
+#### .append
 ```javascript
 //append
 $("#append_bttn").click(function(){
@@ -137,7 +138,7 @@ $("#append_bttn").click(function(){
 })
 ```
 
-- .html
+#### .html
 ```javascript
 //html
 $("#html_bttn").click(function(){
@@ -145,7 +146,7 @@ $("#html_bttn").click(function(){
 })
 ```
 
-- .attr
+#### .attr
 ```javascript
 //attr
 $("#attr_bttn").click(function(){
@@ -153,7 +154,7 @@ $("#attr_bttn").click(function(){
 })
 ```
 
-- .val
+#### .val
 ```javascript
 //Value
 $("#val_bttn").click(function(){
@@ -161,7 +162,7 @@ $("#val_bttn").click(function(){
 })
 ```
 
-- .text
+#### .text
 ```javascript
 //Text
 $("#text_bttn").click(function(){
